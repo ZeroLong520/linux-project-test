@@ -1,0 +1,42 @@
+# ============================================================
+# Assignment Guardian — 作业配置文件
+# ============================================================
+
+# ====== db (from fixtures) ======
+
+# ====== db (from fixtures) ======
+[db]
+ddl = 2026-06-15 17:00
+submit = git
+target = git@github.com/ZeroLong520/linux-project-test.git
+required_files = *.sql, ER图.png, 设计说明.md
+naming = db_学号.zip
+notes = NONE
+grading = SQL正确性50分, ER图设计30分, 文档20分
+format = NONE
+forbidden = MySQL 5.x（必须用8.0+）
+
+# ====== cg (from fixtures) ======
+[cg]
+ddl = 2026-06-20 17:00
+submit = 微信提交
+target = NONE
+required_files = 设计说明.md
+naming = JT.学号.zip
+notes = NONE
+grading = 平时分40分，期末考试60分
+format = NONE
+forbidden = NONE
+
+# ====== linux (from fixtures) ======
+[linux]
+ddl = 2026-05-31 23:59
+submit = scp
+target = /home/2350403322/labss/lab7/
+required_files = report.pdf, src/*.sh, README.md
+naming = NONE
+notes = 脚本文件: task1_xxx.sh, task2_xxx.sh;变量名使用小写+下划线;函数名使用小驼峰;操作系统: Ubuntu 22.04 LTS;Shell: Bash 5.1+;编辑器: Vim/VS Code
+grading = 功能完整性: 40分,代码规范: 20分,实验报告: 25分,创新与扩展: 15分
+format = Shell脚本必须包含 shebang (#!/bin/bash),文件编码: UTF-8,文件末尾必须有换行符
+forbidden = 禁止使用 root 权限运行脚本,禁止在脚本中硬编码密码,严禁抄袭，查重率超过30%记0分
+
